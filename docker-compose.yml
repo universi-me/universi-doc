@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+    universi-doc:
+        container_name: universi-doc
+        build:
+            context: .
+        restart: unless-stopped
+        ports:
+            - "8000:8000"

@@ -1,7 +1,12 @@
-FROM python:3
+FROM ubuntu:latest
 
-RUN pip install mkdocs
-RUN pip install mkdocs-material
+RUN apt update
+
+RUN apt install -y python3 python3-pip
+RUN python3 -m pip install --user --upgrade pip
+
+RUN pip3 install --user mkdocs
+RUN pip3 install --user mkdocs-material
 
 EXPOSE 8000
 
@@ -9,6 +14,4 @@ WORKDIR /opt/universi-doc
 
 COPY . /opt/universi-doc
 
-ENTRYPOINT ["mkdocs"]
-
-CMD ["serve", "--dev-addr=0.0.0.0:8000"]
+ENTRYPOINT ["python3", "-m", "mkdocs", "serve", "--dev-addr=0.0.0.0:8000"]
