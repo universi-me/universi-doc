@@ -11,14 +11,14 @@ curl -- (Copiado do Postman)
 ```
 
 ## Importar CURL no seu postman
-![](/universi-doc/img/001.png)
+![](../../img/001.png)
 
-![](/universi-doc/img/002.png)
+![](../../img/002.png)
 
-![](/universi-doc/img/003.png)
+![](../../img/003.png)
 
 ## Copiar CURL para informar aqui
-![](/universi-doc/img/004.png)
+![](../../img/004.png)
 
 ## Configurações
 ### [Alternative] Create_alternative (POST)
