@@ -11,17 +11,17 @@ curl -- (Copiado do Postman)
 ```
 
 ## Importar CURL no seu postman
-![](../../img/001.png)
+![](001.png)
 
-![](../../img/002.png)
+![](002.png)
 
-![](../../img/003.png)
+![](003.png)
 
 ## Copiar CURL para informar aqui
-![](../../img/004.png)
+![](004.png)
 
-## Configurações
-### [Alternative] Create_alternative (POST)
+# Configurações
+## [Alternative] Create_alternative (POST)
 ```json linenums="1"
 curl --location 'localhost:8080/api/group/1/exercise/2/question/13/alternative' \
 --header 'Content-Type: application/json' \
@@ -31,7 +31,7 @@ curl --location 'localhost:8080/api/group/1/exercise/2/question/13/alternative' 
 }'
 ```
 
-### [Alternative] List_alternatives (GET)
+## [Alternative] List_alternatives (GET)
 ```json linenums="1"
 curl --location --request GET 'localhost:8080/api/group/1/exercise/4/question/16/alternative' \
 --header 'Content-Type: application/json' \
@@ -41,7 +41,7 @@ curl --location --request GET 'localhost:8080/api/group/1/exercise/4/question/16
 }'
 ```
 
-### [Alternative] Get_alternative (GET)
+## [Alternative] Get_alternative (GET)
 ```json linenums="1"
 curl --location --request GET 'localhost:8080/api/group/1/exercise/4/question/16/alternative' \
 --header 'Content-Type: application/json' \
@@ -51,7 +51,7 @@ curl --location --request GET 'localhost:8080/api/group/1/exercise/4/question/16
 }'
 ```
 
-### [Alternative] Update_alternative (PUT)
+## [Alternative] Update_alternative (PUT)
 ```json linenums="1"
 curl --location --request PUT 'localhost:8080/api/group/1/exercise/4/question/16/alternative/8' \
 --header 'Content-Type: application/json' \
@@ -61,7 +61,7 @@ curl --location --request PUT 'localhost:8080/api/group/1/exercise/4/question/16
 }'
 ```
 
-### [Alternative] Delete_alternative (DELETE)
+## [Alternative] Delete_alternative (DELETE)
 ```json linenums="1"
 curl --location --request DELETE 'localhost:8080/api/group/1/exercise/4/question/16/alternative/8' \
 --header 'Content-Type: application/json' \
@@ -71,7 +71,7 @@ curl --location --request DELETE 'localhost:8080/api/group/1/exercise/4/question
 }'
 ```
 
-### [Capacity] Add video (POST)
+## [Capacity] Add video (POST)
 ```json linenums="1"
 curl --location 'http://localhost:8080/api/capacitacao/add' \
 --header 'Content-Type: application/json' \
@@ -85,13 +85,13 @@ curl --location 'http://localhost:8080/api/capacitacao/add' \
 }'
 ```
 
-### [Capacity] Delete video (DELETE)
+## [Capacity] Delete video (DELETE)
 ```json linenums="1"
 curl --location --request DELETE 'http://localhost:8080/api/capacitacao/delete/38' \
 --data ''
 ```
 
-### [Capacity] Edit video (PUT)
+## [Capacity] Edit video (PUT)
 ```json linenums="1"
 curl --location --request PUT 'http://localhost:8080/api/capacitacao/edit/1' \
 --header 'Content-Type: application/json' \
@@ -105,22 +105,22 @@ curl --location --request PUT 'http://localhost:8080/api/capacitacao/edit/1' \
 }'
 ```
 
-### [Capacity] List video (GET)
+## [Capacity] List video (GET)
 ```json linenums="1"
 curl --location 'http://localhost:8080/api/capacitacao/video/1'
 ```
 
-### [Capacity] List playlist (GET)
+## [Capacity] List playlist (GET)
 ```json linenums="1"
 curl --location 'http://localhost:8080/api/capacitacao/playlist/iniciante-golang'
 ```
 
-### [Capacity] List category (GET)
+## [Capacity] List category (GET)
 ```json linenums="1"
 curl --location 'http://localhost:8080/api/capacitacao/categoria/golang'
 ```
 
-### [Curriculum] Create_Curriculum (POST)
+## [Curriculum] Create_Curriculum (POST)
 ```json linenums="1"
 curl --location 'localhost:8080/api/curriculum' \
 --header 'Content-Type: application/json' \
@@ -129,24 +129,24 @@ curl --location 'localhost:8080/api/curriculum' \
 }'
 ```
 
-### [Curriculum] List_Curriculum (GET)
+## [Curriculum] List_Curriculum (GET)
 ```json linenums="1"
 curl --location 'localhost:8080/api/curriculum' \
 --data ''
 ```
 
-### [Curriculum] Get_Curriculum (GET)
+## [Curriculum] Get_Curriculum (GET)
 ```json linenums="1"
 curl --location 'localhost:8080/api/curriculum/1'
 ```
 
-### [Curriculum] Delete_Curriculum (DELETE)
+## [Curriculum] Delete_Curriculum (DELETE)
 ```json linenums="1"
 curl --location --request DELETE 'localhost:8080/api/curriculum/delete/1' \
 --data ''
 ```
 
-### [Curriculum] Update_Curriculum (PUT)
+## [Curriculum] Update_Curriculum (PUT)
 ```json linenums="1"
 curl --location --request PUT 'localhost:8080/api/curriculum/update/1' \
 --header 'Content-Type: application/json' \
@@ -155,19 +155,19 @@ curl --location --request PUT 'localhost:8080/api/curriculum/update/1' \
 }'
 ```
 
-### [exercise] get_Exercise (GET)
+## [exercise] get_Exercise (GET)
 ```json linenums="1"
 curl --location 'localhost:8080/api/group/1/exercise/1' \
 --data ''
 ```
 
-### [exercise] list_Exercise (GET)
+## [exercise] list_Exercise (GET)
 ```json linenums="1"
 curl --location 'localhost:8080/api/group/1/exercise' \
 --data ''
 ```
 
-### [exercise] create_Exercise (POST)
+## [exercise] create_Exercise (POST)
 ```json linenums="1"
 curl --location 'localhost:8080/api/group/1/exercise' \
 --header 'Content-Type: application/json' \
@@ -176,7 +176,7 @@ curl --location 'localhost:8080/api/group/1/exercise' \
 }'
 ```
 
-### [exercise] update_Exercise (PUT)
+## [exercise] update_Exercise (PUT)
 ```json linenums="1"
 curl --location --request PUT 'localhost:8080/api/group/1/exercise/2' \
 --header 'Content-Type: application/json' \
@@ -185,17 +185,17 @@ curl --location --request PUT 'localhost:8080/api/group/1/exercise/2' \
 }'
 ```
 
-### [exercise] delete_Exercise (DELETE)
+## [exercise] delete_Exercise (DELETE)
 ```json linenums="1"
 curl --location --request DELETE 'localhost:8080/api/group/1/exercise/1'
 ```
 
-### [exercise] get_Questions_With_Alternatives (GET)
+## [exercise] get_Questions_With_Alternatives (GET)
 ```json linenums="1"
 curl --location 'localhost:8080/api/group/1/exercise/1/questions?amount=10'
 ```
 
-### [exercise] calculate_exercise (POST)
+## [exercise] calculate_exercise (POST)
 ```json linenums="1"
 curl --location 'localhost:8080/api/group/1/exercise/1' \
 --header 'Content-Type: application/json' \
@@ -306,22 +306,22 @@ curl --location 'localhost:8080/api/group/1/exercise/1' \
 '
 ```
 
-### [Indicators] get_Indicators (GET)
+## [Indicators] get_Indicators (GET)
 ```json linenums="1"
 curl --location 'localhost:8080/api/user/indicators'
 ```
 
-### [Indicators] get_Ranking_Score (GET)
+## [Indicators] get_Ranking_Score (GET)
 ```json linenums="1"
 curl --location 'localhost:8080/api/user/ranking'
 ```
 
-### [Link] Criar (POST)
+## [Link] Criar (POST)
 ```json linenums="1"
 curl --location ''
 ```
 
-### [Profile] Visualizar (GET)
+## [Profile] Visualizar (GET)
 ```json linenums="1"
 curl --location 'localhost:8080/api/profile/get' \
 --header 'Content-Type: application/json' \
@@ -331,17 +331,17 @@ curl --location 'localhost:8080/api/profile/get' \
 }'
 ```
 
-### [Question] get_Question (GET)
+## [Question] get_Question (GET)
 ```json linenums="1"
 curl --location 'localhost:8080/api/group/1/exercise/2/question/13'
 ```
 
-### [Question] delete_Question (DELETE)
+## [Question] delete_Question (DELETE)
 ```json linenums="1"
 curl --location --request DELETE 'localhost:8080/api/group/1/exercise/2/question/13'
 ```
 
-### [Question] create_Question (POST)
+## [Question] create_Question (POST)
 ```json linenums="1"
 curl --location 'localhost:8080/api/group/1/exercise/1/question' \
 --header 'Content-Type: application/json' \
@@ -354,7 +354,7 @@ curl --location 'localhost:8080/api/group/1/exercise/1/question' \
 }'
 ```
 
-### [Question] update_Question (PUT)
+## [Question] update_Question (PUT)
 ```json linenums="1"
 curl --location --request PUT 'localhost:8080/api/group/1/exercise/2/question/13' \
 --header 'Content-Type: application/json' \
@@ -367,12 +367,12 @@ curl --location --request PUT 'localhost:8080/api/group/1/exercise/2/question/13
 }'
 ```
 
-### [Question] list_Question (GET)
+## [Question] list_Question (GET)
 ```json linenums="1"
 curl --location ''
 ```
 
-### [User] login (POST)
+## [User] login (POST)
 ```json linenums="1"
 curl --location 'localhost:8080/api/signin' \
 --header 'Content-Type: application/json' \
@@ -382,7 +382,7 @@ curl --location 'localhost:8080/api/signin' \
 }'
 ```
 
-### [User] exit (POST)
+## [User] exit (POST)
 ```json linenums="1"
 curl --location 'localhost:8080/login.js' \
 --header 'Content-Type: application/json' \
@@ -392,7 +392,7 @@ curl --location 'localhost:8080/login.js' \
 }'
 ```
 
-### [Vacancy] Create_Vacancy (POST)
+## [Vacancy] Create_Vacancy (POST)
 ```json linenums="1"
 curl --location 'localhost:8080/api/vacancy' \
 --header 'Content-Type: application/json' \
