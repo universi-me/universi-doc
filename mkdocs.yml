@@ -4,7 +4,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - toc.integrate
+    # - toc.integrate
     - navigation.top
     - search.suggest
     - search.highlight
@@ -51,4 +51,4 @@ extra:
       link: https://github.com/universi-me
 
 copyright: |
-  &copy; 2023 <a href="https://universi.me/"  target="_blank" rel="noopener">Universi.me</a>
+  &copy; 2025 <a href="https://dcx.universi.me/" target="_blank" rel="noopener">Universi.me</a>
