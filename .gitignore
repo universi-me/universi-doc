@@ -32,4 +32,11 @@ build/
 ### VS Code ###
 .vscode/
 
+### Python ###
+/.venv
+**/__pycache__
+
+### MkDocs ###
+/site
+
 *.DS_Store
