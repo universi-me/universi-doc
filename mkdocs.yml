@@ -1,5 +1,9 @@
-site_name: Universi.me Docs
+site_name: Documentação Universi.me
+extra_css:
+  - assets/stylesheets/extra.css
 theme:
+  logo: assets/universime.png
+  favicon: assets/favicon.svg
   name: material
   features:
     - navigation.tabs
@@ -15,16 +19,14 @@ theme:
     - content.code.annotate
   language: pt
   palette:
-    - scheme: default
+    - scheme: universime_scheme
       toggle:
         icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
-      primary: grey
-      accent: blue 
-    - scheme: slate 
+        name: Ativar Modo Noturno
+    - scheme: slate
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode    
+        name: Desativar Modo Noturno  
       primary: grey
       accent: blue
 
