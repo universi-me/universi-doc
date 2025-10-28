@@ -1,0 +1,12 @@
+/* docs/stylesheets/extra.css */
+[data-md-color-scheme="universime_scheme"] {
+  --md-primary-fg-color: #f6bc0d;
+  --md-footer-bg-color--dark: #f6bc0d;
+  --md-default-fg-color--lightest: #f6bc0d;
+  --md-primary-fg-color--light: #e8f0fe;
+  --md-primary-fg-color--dark: #0d47a1;
+
+  --md-accent-fg-color: #f6bc0d;
+  --md-accent-fg-color--light: #fce8e6;
+  --md-accent-fg-color--dark: #c53929;
+}

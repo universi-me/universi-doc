@@ -1,0 +1,2106 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="Cliente%20Web/1.%20Deploy/">
+      
+      
+      <link rel="icon" href="assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Documentação Universi.me</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="universime_scheme" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introducao" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="." title="Documentação Universi.me" class="md-header__button md-logo" aria-label="Documentação Universi.me" data-md-component="logo">
+      
+  <img src="assets/universime.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação Universi.me
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="universime_scheme" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Ativar Modo Noturno"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Ativar Modo Noturno" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="blue"  aria-label="Desativar Modo Noturno"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Desativar Modo Noturno" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="Cliente%20Web/1.%20Deploy/" class="md-tabs__link">
+          
+  
+  Cliente Web
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="Testes/postman/" class="md-tabs__link">
+          
+  
+  Testes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="fluxo/front/" class="md-tabs__link">
+          
+  
+  Fluxo
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Documentação Universi.me" class="md-nav__button md-logo" aria-label="Documentação Universi.me" data-md-component="logo">
+      
+  <img src="assets/universime.png" alt="logo">
+
+    </a>
+    Documentação Universi.me
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#infraestrutura-e-processo-de-implantacao-da-plataforma-universime" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infraestrutura e Processo de Implantação da Plataforma Universi.me
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Infraestrutura e Processo de Implantação da Plataforma Universi.me">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#servico-do-front" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serviço do Front
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Serviço do Front">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variaveis-de-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variáveis de Ambiente
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servico-da-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serviço da API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Serviço da API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variaveis-de-ambiente_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variáveis de Ambiente
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy-reverso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proxy Reverso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banco-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Banco de dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servicos-externos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serviços Externos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Serviços Externos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#minio" class="md-nav__link">
+    <span class="md-ellipsis">
+      MinIO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keycloak" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keycloak
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#email" class="md-nav__link">
+    <span class="md-ellipsis">
+      Email
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google Services
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implantacao-da-plataforma" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implantação da Plataforma
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implantação da Plataforma">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacao-das-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalação das Dependências
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clonar-repositorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clonar Repositórios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurando-e-iniciando-o-servico-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurando e iniciando o serviço API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurando-e-iniciando-o-servico-front" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurando e iniciando o serviço Front
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurando-o-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurando o Nginx
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problemas-comuns-solucoes-e-dicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problemas comuns, soluções e dicas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problemas comuns, soluções e dicas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desempenho-do-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desempenho do Sistema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problemas-de-inicializacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problemas de Inicialização
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#release-de-uma-nova-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Release de Uma Nova Versão
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Cliente Web
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Cliente Web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Cliente%20Web/1.%20Deploy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Cliente%20Web/2.%20Estrutura%20do%20c%C3%B3digo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Estrutura do código
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Componentes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Componentes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Cliente%20Web/Componentes/ActionButton/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ActionButton
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Cliente%20Web/Componentes/BootstrapIcon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BootstrapIcon
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Cliente%20Web/Componentes/Filter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Cliente%20Web/Componentes/ProfileImage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProfileImage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Cliente%20Web/Componentes/ProfileInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProfileInfo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Cliente%20Web/Componentes/UniversiModal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UniversiModal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Contextos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Contextos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Cliente%20Web/Contextos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contextos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Cliente%20Web/Contextos/AuthContext/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AuthContext
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Cliente%20Web/Contextos/ThemeContext/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ThemeContext
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Cliente%20Web/Contextos/YouTubePlayerContext/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    YouTubePlayerContext
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hooks
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Hooks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Cliente%20Web/Hooks/useCanI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    useCanI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Cliente%20Web/Hooks/useUmami/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    useUmami
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Serviços
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Serviços
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Cliente%20Web/Servi%C3%A7os/UniversimeApi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UniversimeApi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Testes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Testes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Testes/postman/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introdução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fluxo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Fluxo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fluxo/front/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Front-end: Criação, desenvolvimento e finalização de tarefa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#infraestrutura-e-processo-de-implantacao-da-plataforma-universime" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infraestrutura e Processo de Implantação da Plataforma Universi.me
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Infraestrutura e Processo de Implantação da Plataforma Universi.me">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#servico-do-front" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serviço do Front
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Serviço do Front">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variaveis-de-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variáveis de Ambiente
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servico-da-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serviço da API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Serviço da API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variaveis-de-ambiente_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variáveis de Ambiente
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy-reverso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proxy Reverso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banco-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Banco de dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servicos-externos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serviços Externos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Serviços Externos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#minio" class="md-nav__link">
+    <span class="md-ellipsis">
+      MinIO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keycloak" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keycloak
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#email" class="md-nav__link">
+    <span class="md-ellipsis">
+      Email
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google Services
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implantacao-da-plataforma" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implantação da Plataforma
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implantação da Plataforma">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacao-das-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalação das Dependências
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clonar-repositorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clonar Repositórios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurando-e-iniciando-o-servico-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurando e iniciando o serviço API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurando-e-iniciando-o-servico-front" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurando e iniciando o serviço Front
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurando-o-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurando o Nginx
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problemas-comuns-solucoes-e-dicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problemas comuns, soluções e dicas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problemas comuns, soluções e dicas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desempenho-do-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desempenho do Sistema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problemas-de-inicializacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problemas de Inicialização
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#release-de-uma-nova-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Release de Uma Nova Versão
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><img alt="" src="assets/universi-me2.png" /></p>
+<hr />
+<h1 id="introducao">Introdução</h1>
+<p>O <strong>Universi.me</strong> é uma aplicação web, uma plataforma de desenvolvimento social voltada para o acompanhamento de pessoas, podendo ser utilizada no contexto acadêmico e profissional. A rede social permite que seus usuários compartilhem informações acadêmicas e profissionais, criando redes de pessoas conectadas por projetos ou atividades em comum.</p>
+<p>A arquitetura do Universi.me é composta por diversos serviços interconectados: um servidor de API baseado em <strong>Spring Boot</strong>, um <strong>front-end em React e TypeScript</strong>, bancos de dados <strong>PostgreSQL</strong> e <strong>MongoDB</strong>, além de integrações com <strong>MinIO</strong> (armazenamento de imagens) e <strong>Keycloak</strong> (autenticação).</p>
+<hr />
+<h2 id="infraestrutura-e-processo-de-implantacao-da-plataforma-universime">Infraestrutura e Processo de Implantação da Plataforma Universi.me</h2>
+<p><img alt="Diagrama dos componentes do Universi.me" src="infraestrutura/imagens/figura1-diagrama.png" /></p>
+<p>A infraestrutura é composta por diversos componentes interligados, cada um
+com funções específicas que, juntos, garantem o funcionamento integrado da
+aplicação. No núcleo do sistema está o <strong>API Server</strong>. Ele é responsável por processar
+as requisições vindas do <strong>Cliente Web</strong> e de acessar, quando necessário, via conexão
+segura, serviços externos como <strong>MinIO</strong>, <strong>Keycloak</strong>, <strong>Google Services</strong> e <strong>Email</strong>. Para a
+persistência dos dados utilizamos o banco de dados <strong>PostgreSQL</strong> e <strong>MongoDB</strong>
+comunicando-se através de uma rede interna privada interligada entre si. E para
+permitir a comunicação com o usuário, utiliza-se um proxy reverso para redirecionar
+e expor os serviços Front e API Server, tornando o acesso público e acessível ao
+usuário final.</p>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Função</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API Server</td>
+<td>Processa requisições e conecta com serviços externos</td>
+</tr>
+<tr>
+<td>Front-End</td>
+<td>Interface gráfica em React/TypeScript</td>
+</tr>
+<tr>
+<td>Banco de Dados</td>
+<td>PostgreSQL (relacional) e MongoDB (não relacional)</td>
+</tr>
+<tr>
+<td>Proxy Reverso</td>
+<td>Nginx para expor serviços</td>
+</tr>
+<tr>
+<td>Serviços Externos</td>
+<td>MinIO, Keycloak, Google Services, Email</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="servico-do-front">Serviço do Front</h3>
+<p>O Front é a camada de interface da aplicação é através dele que os usuários
+interagem, desenvolvida em <strong>React</strong>, <strong>TypeScript</strong> e <strong>Docker</strong>, configurado como projeto
+<strong>NPM</strong>, o serviço, ao iniciar, fica disponível para acesso via HTTP na porta <code>5173</code> em
+modo de desenvolvimento e porta <code>4173</code> em modo preview (o número da porta pode
+se auto incrementar caso a porta esteja em uso no momento). Link do repositório
+disponível no GitHub:</p>
+<p>Repositório: <a href="https://github.com/universi-me/universi-front">github.com/universi-me/universi-front</a></p>
+<h4 id="variaveis-de-ambiente">Variáveis de Ambiente</h4>
+<p>As variáveis ambiente do serviço do Front podem ser definidas no processo
+de implantação no arquivo <code>.env</code>. A tabela a seguir lista as variáveis ambientes e
+suas respectivas descrições e valores.</p>
+<table>
+<thead>
+<tr>
+<th>Variável</th>
+<th>Descrição</th>
+<th>Valor Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>VITE_UNIVERSIME_API</code></td>
+<td>Domínio da API utilizada pelo front</td>
+<td><code>http://localhost:8080/api</code></td>
+</tr>
+<tr>
+<td><code>VITE_BUILD_HASH</code></td>
+<td>Tipo de build (versão atual)</td>
+<td><code>development</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="servico-da-api">Serviço da API</h3>
+<p>O serviço da API é a camada de comunicação com o Cliente Web,
+desenvolvido em <strong>API REST</strong> com <strong>Spring Boot</strong>, <strong>Java</strong> e <strong>Docker</strong>, estruturado como
+projeto <strong>Maven</strong>, ao iniciar a aplicação, o serviço fica disponível para acesso via HTTP
+na porta padrão <code>8080</code>. Link do repositório disponível no GitHub:</p>
+<p>Repositório: <a href="https://github.com/universi-me/universi-api">github.com/universi-me/universi-api</a></p>
+<h4 id="variaveis-de-ambiente_1">Variáveis de Ambiente</h4>
+<p>Por padrão as variáveis ambiente do serviço da API seguem um padrão de formato começando com <code>API_</code>, esse padrão de formato tem a finalidade de localizar e identificar uma variável ambiente configurável. Todas as variáveis ambientais podem ser localizadas no arquivo <code>application.yml</code> e definidas durante o processo de implantação no arquivo <code>.env</code>. A tabela a seguir lista as variáveis ambientes e suas respectivas descrições e valores.</p>
+<table>
+<thead>
+<tr>
+<th>Variável</th>
+<th>Descrição</th>
+<th>Valor Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>API_PROFILE_ACTIVE</code></td>
+<td>Modo de Execução. Responsável por definir o modo de execução da aplicação (<code>test</code>, <code>dev</code>, <code>prod</code>)</td>
+<td><code>dev</code></td>
+</tr>
+<tr>
+<td><code>API_SERVER_PORT</code></td>
+<td>Porta utilizada pelo servidor para receber requisições HTTP.</td>
+<td><code>8080</code></td>
+</tr>
+<tr>
+<td><code>API_DB_NAME</code></td>
+<td>Nome da base de dados. Responsável por definir o nome da base de dados a ser utilizado nos serviços de base de dados.</td>
+<td><code>universime_api</code></td>
+</tr>
+<tr>
+<td><code>API_DB_DOMAIN</code></td>
+<td>Domínio do banco de dados. Endereço ou domínio onde o banco de dados está hospedado.</td>
+<td><code>localhost</code></td>
+</tr>
+<tr>
+<td><code>API_DB_PORT</code></td>
+<td>Porta do banco de dados. Porta utilizada para conexão com o banco de dados.</td>
+<td><code>5432</code></td>
+</tr>
+<tr>
+<td><code>API_DB_USER</code></td>
+<td>Usuário do banco de dados. Nome de usuário para autenticação no banco de dados.</td>
+<td><code>postgres</code></td>
+</tr>
+<tr>
+<td><code>API_DB_PASS</code></td>
+<td>Senha do banco de dados. Senha de acesso ao banco de dados.</td>
+<td><code>postgres</code></td>
+</tr>
+<tr>
+<td><code>API_DB_MONGO_HOST</code></td>
+<td>Host do MongoDB. Variável para definir o host do MongoDB.</td>
+<td><code>API_DB_DOMAIN</code></td>
+</tr>
+<tr>
+<td><code>API_LOCAL_ORGANIZATION_ID_ENABLED</code></td>
+<td>Habilitar ID local de organização. Define se a funcionalidade de organização local está habilitada.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>API_LOCAL_ORGANIZATION_ID</code></td>
+<td>ID local da organização. Identificador padrão do grupo da organização.</td>
+<td><code>ccae</code></td>
+</tr>
+<tr>
+<td><code>API_RECOVERY_TOKEN_EXPIRATION_HOURS</code></td>
+<td>Expiração de recuperação de senha. Tempo de expiração do token de recuperação de senha (em horas).</td>
+<td><code>168</code></td>
+</tr>
+<tr>
+<td><code>API_JWT_SECRET_KEY</code></td>
+<td>Chave secreta do JWT. Define a chave secreta utilizada para assinar tokens JWT. Caso esteja vazio, a plataforma automaticamente gera uma chave secreta randômica a cada inicialização.</td>
+<td><code>Vazio</code></td>
+</tr>
+<tr>
+<td><code>API_JWT_EXPIRATION</code></td>
+<td>Tempo de expiração do JWT. Tempo de expiração do token JWT em segundos.</td>
+<td><code>3600</code></td>
+</tr>
+<tr>
+<td><code>API_MINIO_ENABLED</code></td>
+<td>Ativar serviço MinIO. Define se a integração com o serviço de armazenamento MinIO está habilitada.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>API_MINIO_URL</code></td>
+<td>URL do MinIO. Endereço de acesso ao servidor MinIO.</td>
+<td><code>http://localhost:9000</code></td>
+</tr>
+<tr>
+<td><code>API_MINIO_ACESSKEY</code></td>
+<td>Chave de acesso MinIO. Chave de acesso (Access Key) do MinIO.</td>
+<td><code>9JwDwrutRQrywpBFH9ks</code></td>
+</tr>
+<tr>
+<td><code>API_MINIO_SECRET</code></td>
+<td>Chave secreta MinIO. Chave secreta (Secret Key) do MinIO.</td>
+<td><code>kEtizmyDs70XSm0JVIbLACH2zDv1TOeCawhZ7qWb</code></td>
+</tr>
+<tr>
+<td><code>API_MINIO_BUCKET</code></td>
+<td>Bucket MinIO. Nome do bucket utilizado no MinIO.</td>
+<td><code>universime</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="proxy-reverso">Proxy Reverso</h3>
+<p>O proxy reverso tem um papel de controlar o acesso aos serviços Front e API (back), esse processo consiste em expor uma porta pública que atua como ponto de entrada do sistema.
+Essa porta é representada por um socket (IP+porta), que recebe todas as conexões externas. As requisições recebidas nesse socket são então redirecionadas para o socket interno correspondente (porta interna do serviço apropriado), garantindo que o tráfego externo chegue corretamente ao serviço correspondente dentro do ambiente.
+O proxy reverso utilizado atualmente é o <strong>Nginx</strong>, por ser o mais popular e apresentar bom desempenho, nele configuramos para expor os dois serviços Front para o caminho <code>/</code> e o serviço API para o caminho <code>/api</code>.</p>
+<hr />
+<h3 id="banco-de-dados">Banco de dados</h3>
+<p>Para a persistência dos dados utilizamos bancos de dados distintos a
+depender do tipo de dado sendo armazenado. O PostgreSQL e MongoDB são
+utilizados, configurados na mesma rede privada do serviço de back (API), porém
+também podem ser configurados para serem acessados através de conexão
+remota. O <strong>PostgreSQL</strong> é utilizado para dados <strong>relacionais</strong>, como por exemplo
+registros de usuários, grupos e dados dos seus perfis. O <strong>MongoDB</strong> é atualmente
+utilizado para armazenar informações <strong>não relacionais</strong> como por exemplo dados de
+publicações, comentários nas publicações e reações em publicações.</p>
+<hr />
+<h3 id="servicos-externos">Serviços Externos</h3>
+<p>Para manter o desempenho, segurança e acessibilidade, o Universi.me
+acessa alguns serviços externos para armazenamento de imagens, processo de
+autenticação e proteção contra robôs que podem ser utilizados.</p>
+<h4 id="minio">MinIO</h4>
+<p>Esse serviço é responsável pelo armazenamento de arquivos de forma
+segura e rápida, atualmente utilizado na plataforma para <strong>armazenamento de imagens</strong>, como por exemplo imagens de perfis, imagens de postagens, logos de
+grupos e banner de grupos. Acessado externamente em um domínio seguro isolado
+da plataforma, garantindo proteção aos dados e desempenho.</p>
+<h4 id="keycloak">Keycloak</h4>
+<p>O <strong>Keycloak</strong> é uma plataforma de gerenciamento de usuários. Ele é utilizado
+para o processo de autenticação na plataforma utilizando a tecnologia <strong>OIDC</strong>
+(OpenID Connect) em conjunto com o processo de autenticação Flow, onde a
+plataforma envia o usuário para a página de autenticação do serviço Keycloak e
+assim que for autenticado o usuário recebe um token e é redirecionado de volta
+para a plataforma para concluir o processo de autenticação e permitir o acesso ao
+Universi.me. Este serviço é opcional e pode ser configurado no painel de
+configurações da plataforma Universi.me. Quando este serviço não está em uso, os
+usuários são autenticados na API usando tokens <strong>JWT</strong> (Json Web Tokens).</p>
+<h4 id="email">Email</h4>
+<p>O serviço de email é utilizado para a funcionalidade de envio de notificações
+da plataforma e recuperação de conta via e-mail. Esse serviço se conecta a um
+servidor <strong>SMTP/SMTPS</strong> (Simple Mail Transfer Protocol) externo para envio de
+emails. O serviço pode ser configurado através do painel de configurações da
+plataforma Universi.me.</p>
+<h4 id="google-services">Google Services</h4>
+<p>O Google Services é utilizado opcionalmente para a funcionalidade de
+autenticação da plataforma através da ação <strong>entrar via conta Google</strong> e também é utilizada a funcionalidade <strong>reCaptcha Enterprise</strong> opcionalmente para a proteção dos
+formulários públicos na plataforma como o Login, Cadastrar-se e Recuperação de
+Conta.</p>
+<hr />
+<h2 id="implantacao-da-plataforma">Implantação da Plataforma</h2>
+<p>Para a implantação da plataforma iremos considerar uma <strong>VM</strong> (Máquina
+Virtual) dedicada para utilizarmos no ambiente de trabalho. Essa VM atua como um
+<strong>servidor isolado</strong>, para podermos gerenciar os recursos necessários para
+implantação.</p>
+<h3 id="instalacao-das-dependencias">Instalação das Dependências</h3>
+<p>Para prosseguir com o processo de implantação da plataforma é necessário
+instalar algumas dependências no servidor principal (ou VM) que iremos utilizar para
+o ambiente de trabalho. Para podermos ter a possibilidade de, por exemplo,
+orquestrar containers, serviço de proxy reverso, clonar repositórios e editar arquivos
+via terminal.</p>
+<p>Execute o seguinte comando para instalar as dependências necessárias
+(<code>Docker</code>, <code>docker-compose</code>, <code>Nginx</code>, <code>Git</code> e <code>nano</code>) utilizando o gerenciador de pacotes
+APT:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>docker<span class="w"> </span>docker-compose<span class="w"> </span>nginx<span class="w"> </span>git<span class="w"> </span>nano
+</code></pre></div></p>
+<h3 id="clonar-repositorios">Clonar Repositórios</h3>
+<p>Após a instalação das dependências, iremos criar uma pasta de trabalho para
+clonar o repositório localmente, utilizamos o comando git clone especificando o
+repositório da API:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/universi-me/universi-api.git
+</code></pre></div></p>
+<p>e depois para clonar localmente o Front utilizamos o comando:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/universi-me/universi-front.git
+</code></pre></div></p>
+<h3 id="configurando-e-iniciando-o-servico-api">Configurando e iniciando o serviço API</h3>
+<p>Navegamos para a pasta do repositório <code>universime-api</code> e para
+configurarmos as variáveis ambientes de acordo com as necessidades, para
+definirmos as variáveis ambiente podemos utilizar o arquivo <code>.env</code>, para editar
+utilizamos o comando:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">cd</span><span class="w"> </span>universi-api
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>nano<span class="w"> </span>.env
+</code></pre></div></p>
+<p>Após editamos as variáveis salvamos utilizando Control+X.</p>
+<p>Por padrão no arquivo de configuração do docker-compose
+<code>docker-compose.yml</code> a porta exposta para o serviço da API é <code>8011</code>, podendo ser
+alterada utilizando o comando:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>nano<span class="w"> </span>docker-compose.yml
+</code></pre></div></p>
+<p>Antes de iniciarmos a API precisamos fazer o build da imagem utilizando o
+comando:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker-compose<span class="w"> </span>build<span class="w"> </span>--no-cache
+</code></pre></div></p>
+<p>Depois, caso o serviço da API já esteja ativo anteriormente:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker-compose<span class="w"> </span>stop
+</code></pre></div></p>
+<p>Para iniciarmos o serviço em background utilizamos o comando:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>docker-compose<span class="w"> </span>up<span class="w"> </span>-d
+</code></pre></div></p>
+<hr />
+<h3 id="configurando-e-iniciando-o-servico-front">Configurando e iniciando o serviço Front</h3>
+<p>Para o Front, o processo é semelhante ao do serviço da API. Navegamos
+para a pasta do projeto <code>universi-front</code>, editamos as variáveis de ambiente no
+arquivo <code>.env</code> através do comando:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">cd</span><span class="w"> </span>universi-front
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>nano<span class="w"> </span>.env
+</code></pre></div></p>
+<p>Após editamos as variáveis salvamos utilizando Control+X.</p>
+<p>Por padrão a porta exposta do serviço é <code>8088</code>, podendo ser alterada pelo
+comando:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>nano<span class="w"> </span>docker-compose.yml
+</code></pre></div></p>
+<p>Depois fazemos o build com o comando:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>docker-compose<span class="w"> </span>build<span class="w"> </span>--no-cache
+</code></pre></div></p>
+<p>Paramos o serviço caso já esteja ativo:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>docker-compose<span class="w"> </span>stop
+</code></pre></div></p>
+<p>E iniciamos o serviço com o seguinte comando:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>docker-compose<span class="w"> </span>up<span class="w"> </span>-d
+</code></pre></div></p>
+<hr />
+<h3 id="configurando-o-nginx">Configurando o Nginx</h3>
+<p>Para configurar o <strong>Nginx</strong> criamos um novo arquivo de configuração através do
+comando:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/nginx/sites-available/universi.me
+</code></pre></div></p>
+<p>Em seguida configuramos o proxy reverso para o serviço API o caminho
+<code>/api</code> para a porta escolhida, que no nosso caso é <code>8011</code> e para o serviço do Front o
+caminho <code>/</code> para a porta escolhida <code>8088</code>, um exemplo de configuração mostrado na
+figura abaixo.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-17-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-17-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-17-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-17-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-17-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-17-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-17-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-17-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-17-10">10</a></span>
+<span class="normal"><a href="#__codelineno-17-11">11</a></span>
+<span class="normal"><a href="#__codelineno-17-12">12</a></span>
+<span class="normal"><a href="#__codelineno-17-13">13</a></span>
+<span class="normal"><a href="#__codelineno-17-14">14</a></span>
+<span class="normal"><a href="#__codelineno-17-15">15</a></span>
+<span class="normal"><a href="#__codelineno-17-16">16</a></span>
+<span class="normal"><a href="#__codelineno-17-17">17</a></span>
+<span class="normal"><a href="#__codelineno-17-18">18</a></span>
+<span class="normal"><a href="#__codelineno-17-19">19</a></span>
+<span class="normal"><a href="#__codelineno-17-20">20</a></span>
+<span class="normal"><a href="#__codelineno-17-21">21</a></span>
+<span class="normal"><a href="#__codelineno-17-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">universi.me</span><span class="p">;</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4"></a>
+<a id="__codelineno-17-5" name="__codelineno-17-5"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6"></a><span class="w">        </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://localhost:8088</span><span class="p">;</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7"></a><span class="w">        </span><span class="kn">proxy_redirect</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Host</span><span class="w"> </span><span class="nv">$host</span><span class="p">;</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Real-IP</span><span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Forwarded-For</span><span class="w"> </span><span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+<a id="__codelineno-17-11" name="__codelineno-17-11"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Forwarded-Proto</span><span class="w"> </span><span class="nv">$scheme</span><span class="p">;</span>
+<a id="__codelineno-17-12" name="__codelineno-17-12"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13"></a>
+<a id="__codelineno-17-14" name="__codelineno-17-14"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/api/</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-17-15" name="__codelineno-17-15"></a><span class="w">        </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://localhost:8011</span><span class="p">;</span>
+<a id="__codelineno-17-16" name="__codelineno-17-16"></a><span class="w">        </span><span class="kn">proxy_redirect</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+<a id="__codelineno-17-17" name="__codelineno-17-17"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Host</span><span class="w"> </span><span class="nv">$host</span><span class="p">;</span>
+<a id="__codelineno-17-18" name="__codelineno-17-18"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Real-IP</span><span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
+<a id="__codelineno-17-19" name="__codelineno-17-19"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Forwarded-For</span><span class="w"> </span><span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+<a id="__codelineno-17-20" name="__codelineno-17-20"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Forwarded-Proto</span><span class="w"> </span><span class="nv">$scheme</span><span class="p">;</span>
+<a id="__codelineno-17-21" name="__codelineno-17-21"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-17-22" name="__codelineno-17-22"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>Após salvar o arquivo, precisamos habilitar utilizando o seguinte comando
+para criar um link simbólico:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/etc/nginx/sites-available/universi.me<span class="w"> </span>/etc/nginx/sites-enabled/
+</code></pre></div></p>
+<p>Em seguida reiniciamos o serviço Nginx para aplicar as alterações através do
+comando:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>nginx
+</code></pre></div></p>
+<hr />
+<h2 id="problemas-comuns-solucoes-e-dicas">Problemas comuns, soluções e dicas</h2>
+<h3 id="desempenho-do-sistema">Desempenho do Sistema</h3>
+<p>O serviço da API pode apresentar problemas de desempenho. Para verificar
+se o desempenho é um problema, podemos utilizar uma ferramenta de inspeção
+como por exemplo a ferramenta Web DevTools no navegador Web Chrome. Ao usar
+essa ferramenta, na aba de rede, podemos visualizar todas as requisições feitas a
+partir do cliente web para o serviço da API. Na coluna tempo podemos ver o tempo
+de execução de cada requisição: se esse valor for elevado como por exemplo 1
+segundo ou mais podemos caracterizar em um possível problema de desempenho,
+podemos considerar o valor ideal de tempo de resposta como sendo abaixo de 1
+segundo, quanto menor esse tempo melhor.</p>
+<p>Para identificar esse problema podemos analisar primeiramente algumas
+classes que têm uma interação frequente durante a execução do sistema, como por
+exemplo as classes User, Profile e Group. Os atributos que são compostos dessas
+classes, como por exemplo do tipo listagens, são aconselháveis sempre utilizar
+anotações com o tipo de carregamento dos valores em banco com atraso
+(FetchType.LAZY), assim essas entidades são carregadas rapidamente e
+possibilitando obter os valores de seus atributos no banco de dados quando
+realmente for necessário, acessado pelo método get de seu atributo, como por
+exemplo que ocorre durante uma serialização Json para construir a resposta para a
+aplicação do cliente web. O trecho de código a seguir mostra um exemplo de
+utilização da anotação com o tipo de carregamento em atraso em um atributo do
+tipo lista:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="nd">@OneToMany</span><span class="p">(</span><span class="n">mappedBy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;profile&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">fetch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FetchType</span><span class="p">.</span><span class="na">LAZY</span><span class="p">)</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="kd">private</span><span class="w"> </span><span class="n">Collection</span><span class="o">&lt;</span><span class="n">Link</span><span class="o">&gt;</span><span class="w"> </span><span class="n">links</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>Caso precise reproduzir a lentidão em uma máquina local de
+desenvolvimento, precisamos obter ou criar uma database semelhante ou
+volumosa com muitos dados inseridos para testes. Reproduzindo o problema
+localmente facilita no processo de identificação e correção do problema.</p>
+<h3 id="problemas-de-inicializacao">Problemas de Inicialização</h3>
+<p>O serviço da API pode falhar durante a inicialização por vários motivos, é
+importante analisarmos o log de inicialização para identificar o problema
+relacionado.</p>
+<p>Uma falha comum que pode ocorrer é problema na comunicação com o
+banco de dados caso o serviço do banco de dados não esteja disponível ou
+configurado incorretamente nas variáveis ambiente do serviço da API como o
+domínio ou porta especificada incorretamente causando falha de conexão recusada.</p>
+<p>Pode também ocorrer falha de migração na database durante a inicialização,
+podemos enfrentar esse problema quando utilizamos uma diversidade de
+implantações e quando atualizamos a versão do serviço da API em uma
+implantação podemos enfrentar erros no script de migração que é executado
+durante a inicialização, para corrigir verificamos o log de inicialização para identificar
+o nome do script de migração e o erro relacionado que causou a falha de migração
+para localizar e solucionar o problema.</p>
+<h3 id="release-de-uma-nova-versao">Release de Uma Nova Versão</h3>
+<p>No repositório do serviço tanto da API quanto do Front, possui um Workflow
+do Github Actions que é executado automaticamente quando publicamos uma
+Release podendo ser acompanhado o progresso na aba Actions do repositório, esse
+script de workflow é responsável por fazer um build de uma imagem docker e
+publicar no Registry do Github, esses imagens ficam disponiveis em:
+<a href="https://github.com/orgs/universi-me/packages">https://github.com/orgs/universi-me/packages</a></p>
+<p>Essas imagens servem para facilitar o deploy do serviço utilizando apenas a
+imagem docker, podendo ter a possibilidade de por exemplo utilizarmos a imagem
+para um deploy em Kubernetes.</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2025 <a href="https://dcx.universi.me/" target="_blank" rel="noopener">Universi.me</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/universi-me" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
